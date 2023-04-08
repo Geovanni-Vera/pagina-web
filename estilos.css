@@ -1,0 +1,87 @@
+/* Estilos generales */
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+h1 {
+	margin: 0;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+section {
+	margin-bottom: 20px;
+}
+
+.animacion {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: mover;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes mover {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 50%;
+    }
+    100% {
+      left: 0;
+    }
+  }
+
+/* Estilos para dispositivos móviles */
+
+@media screen and (max-width: 768px) {
+	header {
+		text-align: center;
+	}
+	
+	nav ul {
+		display: block;
+		text-align: center;
+	}
+	
+	nav li {
+		display: block;
+		margin: 10px 0;
+	}
+}
+
+
+  
